@@ -2,5 +2,6 @@
 
 for icon in $(ls neovide-*.png); do
   format=$(echo $icon | sed 's/neovide-\(.*\).png/\1/g')
+  mkdir -p $HOME/.local/share/icons/hicolor/$format/apps
   cp $icon $HOME/.local/share/icons/hicolor/$format/apps/neovide.png
 done
